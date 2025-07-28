@@ -718,6 +718,24 @@ body {
 /* Location Section */
 .location {
     padding: 120px 0;
+    /* background: linear-gradient(135deg, #dee2e6 0%, #ced4da 100%); */
+    /* background: linear-gradient(135deg, #ccd6dd 0%, #b6c2ca 100%); */
+    /* background: linear-gradient(135deg, #d3d3d3 0%, #c0c0c0 100%); */
+    /* background: linear-gradient(135deg, #bcc5ce 0%, #aab4bd 100%); */
+    /* Charcoal gray with a hint of blue */
+/* background: linear-gradient(135deg, #2e2e2e 0%, #3a3a3a 100%); */
+/* Muted green */
+/* background: linear-gradient(135deg, #e6f0e9 0%, #d0e6db 100%); */
+background: linear-gradient(135deg, #e6f0e9 0%, #fff3b0 50%, #d0e6db 100%);
+
+/* background: linear-gradient(135deg, #ffffff 0%, #f1f3f5 100%); */
+/* background: linear-gradient(135deg, #2f3e46 0%, #354f52 100%); */
+
+
+
+
+
+
 }
 
 .location-content {
