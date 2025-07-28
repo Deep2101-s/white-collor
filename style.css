@@ -620,64 +620,99 @@ body {
 }
 
 /* Reviews Section */
+
 .reviews {
-    padding: 120px 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 100px 0;
+    background: linear-gradient(45deg, #f1f8ff 0%, #e8f4fd 100%);
 }
 
 .reviews-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 .review-card {
-    background: #fff;
-    padding: 40px;
-    border-radius: 16px;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .review-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
-.stars {
+.review-header {
     display: flex;
-    gap: 4px;
-    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
-.stars i {
-    color: #FFD700;
+
+.reviewer-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 1rem;
     font-size: 1.2rem;
 }
 
-.review-card p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+.reviewer-info h4 {
+    margin: 0;
     color: #333;
-    margin-bottom: 24px;
+    font-size: 1.1rem;
+}
+
+.reviewer-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.review-text {
+    color: #555;
+    line-height: 1.6;
     font-style: italic;
 }
 
-.reviewer {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+.google-rating {
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-.reviewer-info h4 {
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 4px;
+.google-rating h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
 }
 
-.reviewer-info span {
+.google-rating .rating-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #667eea;
+    margin: 0 1rem;
+}
+
+.google-rating .total-reviews {
     color: #666;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 /* Location Section */
