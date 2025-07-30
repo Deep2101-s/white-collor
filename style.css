@@ -164,12 +164,11 @@ svg{
     transition: 0.3s;
 }
 
-/* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 95px;
     background: linear-gradient(135deg, #000 0%, #1a1a1a 25%, #2d2d2d 50%, #1a1a1a 75%, #000 100%);
     position: relative;
     overflow: hidden;
@@ -188,16 +187,14 @@ svg{
 }
 
 .hero-container {
-   
-    display:grid;
-    width:100%;
-    grid-template-columns:1fr 1fr;
-    gap:2rem;
-    padding:0 15rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 0 15rem;
 }
 
 .hero-content {
-    
     animation: slideInLeft 1s ease-out;
 }
 
@@ -210,30 +207,8 @@ svg{
 }
 
 .gradient-text {
-    /* background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%); */
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
-    /* background-clip: text; */
     text-shadow: none;
 }
-
-/* .highlight-text {
-    color: #fff;
-    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-    position: relative;
-} */
-
-/* .highlight-text::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, #FFD700, #FFA500);
-    border-radius: 2px;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-} */
 
 .title-line {
     display: block;
@@ -244,22 +219,6 @@ svg{
 .title-line:nth-child(1) { animation-delay: 0.2s; }
 .title-line:nth-child(2) { animation-delay: 0.4s; }
 .title-line:nth-child(3) { animation-delay: 0.6s; }
-
-.highlight {
-    color: #FFD700;
-    position: relative;
-}
-
-.highlight::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background: rgba(255, 215, 0, 0.3);
-    z-index: -1;
-}
 
 .hero-description {
     font-size: 1.2rem;
@@ -469,36 +428,92 @@ svg{
     50% { transform: translateX(-50%) translateY(-10px); }
 }
 
-
-/* Section Titles */
-.section-title {
-    font-size: 3rem;
-    letter-spacing:1px;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 60px;
-    background: linear-gradient(135deg, #000 0%, #333 100%);
-    color:#fff;
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    background-clip: text;
-    position: relative;
+/* ================== RESPONSIVE ================== */
+@media (max-width: 1200px) {
+    .hero-container {
+        padding: 0 6rem;
+        gap: 3rem;
+    }
 }
 
-.section-title-2{
-     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        padding: 0 3rem;
+        text-align: center;
+    }
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .hero-stats {
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .hero-image-container {
+        height: 450px;
+        margin-top: 3rem;
+    }
+    .main-image {
+        width: 75%;
+        height: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .side-images {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75%;
+        height: 30%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+    }
+    .floating-card {
+        bottom: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: #FFD700;
+@media (max-width: 576px) {
+    .hero-container {
+        padding: 0 1.5rem;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-description {
+        font-size: 1rem;
+    }
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 260px;
+    }
+    .hero-image-container {
+        height: 350px;
+    }
+    .main-image {
+        width: 90%;
+        height: 55%;
+    }
+    .side-images {
+        top: 60%;
+        width: 90%;
+        gap: 10px;
+    }
+    .floating-card {
+        bottom: -20%;
+        width: 85%;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
 }
 
 /* Features Section */
