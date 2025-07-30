@@ -1,0 +1,12 @@
+
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <circle cx="150" cy="150" r="140" stroke="#ccc" stroke-width="10" fill="#2b2f3a"/>
+  <circle cx="150" cy="150" r="120" stroke="#aaa" stroke-width="4" fill="none"/>
+
+  <path d="M90 120 L110 90 L140 160 L100 160 Z" fill="white"/>
+  <path d="M210 120 L190 90 L160 160 L200 160 Z" fill="white"/>
+  <path d="M130 160 L150 100 L170 160 Z" fill="white"/>
+
+  <text x="50%" y="200" text-anchor="middle" font-size="28" fill="#f5c46c" font-family="Arial" font-weight="bold">WHITE COLLAR</text>
+  <text x="50%" y="230" text-anchor="middle" font-size="18" fill="white" font-family="Arial">COWORKS</text>
+</svg>
